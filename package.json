@@ -19,7 +19,14 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "git-scripts": "^0.6.4",
     "postcss": "^8",
+    "surge": "^0.23.1",
     "typescript": "^5"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain aexol-pr.surge.sh"
+    }
   }
 }
